@@ -2,5 +2,5 @@
 
 
 class Leaves:
-    def tree()
+    def tree():
       root = "വേര്"
