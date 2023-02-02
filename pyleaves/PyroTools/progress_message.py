@@ -37,13 +37,13 @@ async def progress_for_pyrogram(
             ''.join([finished_str for i in range(math.floor(percentage / 5))]),
             ''.join([unfinished_str for i in range(20 - math.floor(percentage / 5))]))
           
-        Template = template if template else txt.TEMPLATE 
+        Template = template if template else txt.PROGRESS_BAR 
         tmp = progress + Template.format( 
-            round(percentage, 2),
-            humanbytes(current),
-            humanbytes(total),
-            humanbytes(speed),
-            estimated_total_time if estimated_total_time != '' else "0 s"
+            percentage=round(percentage, 2),
+            current=humanbytes(current),
+            total=humanbytes(total),
+            speed=humanbytes(speed),
+            est_time=estimated_total_time if estimated_total_time != '' else "0 s"
         )
         try:
             await message.edit(text=f"{ud_type}\n\n{temp}", reply_markup=markup)                       
