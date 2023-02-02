@@ -1,1 +1,1 @@
-from .progress_message import progress_for_pyrogram
+from .progress_message import pyro_progress        
