@@ -45,7 +45,7 @@ async def pyro_progress(
             est_time=estimated_total_time if estimated_total_time != '' else "0 s"
         )
         try:
-            await message.edit(text=f"{ud_type}\n\n{temp}", reply_markup=markup)                       
+            await message.edit(text=f"{ud_type}\n\n{tmp}", reply_markup=markup)                       
         except Exception as e:
             print(e)
 
