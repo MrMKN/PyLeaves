@@ -8,7 +8,7 @@ from pyleaves.utils import *
 from pyrogram.types import *
 
 
-async def progress_for_pyrogram(
+async def pyro_progress(
     current,
     total,
     ud_type,
