@@ -1,6 +1,6 @@
 # © https://github.com/MrMKN
 
+from .PyroTools import pyro_progress
 
 class Leaves:
-    def tree():
-      root = "വേര്"
+    progress_for_pyrogram = pyro_progress        
