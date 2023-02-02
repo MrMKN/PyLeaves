@@ -5,7 +5,7 @@
 
 import math, time
 from pyleaves.utils import *
-
+from pyrogram.types import *
 
 
 async def progress_for_pyrogram(
