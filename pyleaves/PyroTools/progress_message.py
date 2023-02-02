@@ -14,7 +14,7 @@ async def pyro_progress(
     ud_type,
     message,
     start,
-    template: str,    
+    template=txt.PROGRESS_BAR,    
     finished_str='●',
     unfinished_str='○',
     markup=None,
@@ -36,9 +36,8 @@ async def pyro_progress(
         progress = "{0}{1}".format(
             ''.join([finished_str for i in range(math.floor(percentage / 5))]),
             ''.join([unfinished_str for i in range(20 - math.floor(percentage / 5))]))
-          
-        Template = template if template else txt.PROGRESS_BAR 
-        tmp = progress + Template.format( 
+           
+        tmp = progress + template.format( 
             percentage=round(percentage, 2),
             current=humanbytes(current),
             total=humanbytes(total),
