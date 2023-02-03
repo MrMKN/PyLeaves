@@ -1,15 +1,6 @@
 import math, time
 
 
-class txt(object):
-    PROGRESS_BAR = """\n
-╭━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━➣
-┣⪼ 🗂️ : {percentage} | {current}
-┣⪼ ⏳️ : {total}%
-┣⪼ 🚀 : {speed}/s
-┣⪼ ⏱️ : {est_time}
-╰━━━━━━━━━━━━━━━➣ """
-
 def humanbytes(size):
     if not size:
         return ""
