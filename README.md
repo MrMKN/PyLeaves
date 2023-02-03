@@ -8,7 +8,7 @@ progress_for_pyrogram():
 
 This is async function of ( Download | Upload ) progress bar with simple way to use
 
-###Example
+### Example
 
 ``` python
 
