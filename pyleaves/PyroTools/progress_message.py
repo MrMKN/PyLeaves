@@ -5,6 +5,7 @@
 
 import math, time
 from pyleaves.utils import *
+from pyleaves.text_format import *
 from pyrogram.types import *
 
 
@@ -14,7 +15,7 @@ async def pyro_progress(
     ud_type,
     message,
     start,
-    template=txt.PROGRESS_BAR,    
+    template=PROGRESS_BAR,    
     finished_str='●',
     unfinished_str='○',
     markup=None,
