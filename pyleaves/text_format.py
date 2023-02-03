@@ -8,8 +8,8 @@
 #example template 
 PROGRESS_BAR = """\n
 ╭━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━➣
-┣⪼ 🗂️ : {percentage} | {current}
-┣⪼ ⏳️ : {total}%
+┣⪼ 🗂️ : {current} | {total}
+┣⪼ ⏳️ : {percentage}%
 ┣⪼ 🚀 : {speed}/s
 ┣⪼ ⏱️ : {est_time}
 ╰━━━━━━━━━━━━━━━➣ """
