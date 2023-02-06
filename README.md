@@ -48,11 +48,11 @@ await app.download_media(
 
 ### formats of template
 
-* `{current}` = process completed file size
-* `{total}` = total file size 
-* `{percentage}` = total completed percentage 
-* `{speed}` = current speed in byte/second 
-* `{est_time}` = estimated time 
+* {current} = process completed file size
+* {total} = total file size 
+* {percentage} = total completed percentage 
+* {speed} = current speed in byte/second 
+* {est_time} = estimated time 
 
 
 
