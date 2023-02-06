@@ -2,6 +2,11 @@
 
 🌿 telegram bot's python pypi package & tools for pyrogram
 
+## ⚠️ Must install requirements
+
+* pyrogram
+* tgcrypto 
+
 ### Current featur ⚡️
 
 progress_for_pyrogram():
