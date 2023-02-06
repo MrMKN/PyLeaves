@@ -17,6 +17,7 @@ setuptools.setup(
     name="PyLeaves",
     version=version,
     author="MrMKN",
+    long_description_content_type="text/markdown",
     long_description=readme,
     license='GNU General Public License v3.0',
     description='Python package for telegram bots and sub tool for pyrogram',                           
