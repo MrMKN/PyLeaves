@@ -18,9 +18,9 @@ from typing import (
 async def pyro_progress(
     current,
     total,
-    ud_type,
-    message,
-    start,
+    ud_type: str = "progressing",
+    message: Message,
+    start: time.time(),
     template: Union[str, List[str]] = PROGRESS_BAR,    
     finished_str: Union[str, List[str]] = '●',
     unfinished_str: = Union[str, List[str]] = '○',
