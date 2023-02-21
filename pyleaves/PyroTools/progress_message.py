@@ -7,24 +7,18 @@ import math, time
 from pyleaves.utils import *
 from pyleaves.text_format import *
 from pyrogram.types import *
-from typing import (
-    List,
-    Union,
-    Optional,
-    BinaryIO
-)
 
 
 async def pyro_progress(
     current,
     total,
-    ud_type: str = "progressing",
-    message: Message,
-    start: time.time(),
-    template: Union[str, List[str]] = PROGRESS_BAR,    
-    finished_str: Union[str, List[str]] = '●',
-    unfinished_str: = Union[str, List[str]] = '○',
-    markup: Union[InlineKeyboardMarkup, ReplyKeyboardMarkup, ReplyKeyboardRemove, ForceReply, None] = None,               
+    ud_type,
+    message,
+    start,
+    template = PROGRESS_BAR,    
+    finished_str = '●',
+    unfinished_str = '○',
+    markup = None,               
 ):
 
     now = time.time()
